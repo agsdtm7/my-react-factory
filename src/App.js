@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import TopNav2 from './TopNav2';
-import TopNav3 from './TopNav3';
-import TopNavResponsive from './TopNavResponsive';
+import TopNavResponsive from './layout/TopNavResponsive';
 import './App.css';
 
 class App extends Component {

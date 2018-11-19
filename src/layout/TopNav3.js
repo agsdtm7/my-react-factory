@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import bars from './img/bars.svg';
-import xmenu from './img/x.svg';
+import bars from '../img/bars.svg';
+import xmenu from '../img/x.svg';
 export default class TopNav2 extends Component {
     constructor(props) {
         super(props);

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import bars from './img/bars.svg';
-import xmenu from './img/x.svg';
-import brand from './img/brand.png';
+import bars from '../img/bars.svg';
+import xmenu from '../img/x.svg';
+import brand from '../img/brand.png';
 import './TopNav.css';
 export default class TopNavReponsive extends Component {
     constructor(props) {
