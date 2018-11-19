@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Link from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import bars from '../img/bars.svg';
 import xmenu from '../img/x.svg';
 import brand from '../img/brand.png';
@@ -35,24 +35,24 @@ export default class TopNavReponsive extends Component {
                 <div>
                     {this.props.brand ? <img className="menu-brand" src={brand} width="100" height="40" alt="logo-brand" /> : null}
                     <div style={{ background: this.props.bgColor }} className={`topnav  ${isExpanded ? 'is-expanded' : ''}`} >
-                        <a style={{ color: this.props.txtColor }}
+                        <Link style={{ color: this.props.txtColor }}
                             onClick={this.clicking.bind(this, `${mn1 ? mn1 : 'Home'}`)}
                             className={this.isActive(`${mn1 ? mn1 : 'Home'}`)}
-                            href={mnhref1 ? mnhref1 : '#home'}>
+                            to={mnhref1 ? mnhref1 : '/'}>
                             {mn1 ? mn1 : 'Home'}
-                        </a>
-                        <a style={{ color: this.props.txtColor }}
+                        </Link>
+                        <Link style={{ color: this.props.txtColor }}
                             onClick={this.clicking.bind(this, `${mn2 ? mn2 : 'About'}`)}
                             className={this.isActive(`${mn2 ? mn2 : 'About'}`)}
-                            href={mnhref2 ? mnhref2 : "#about"}>
+                            to={mnhref2 ? mnhref2 : "/about"}>
                             {mn2 ? mn2 : 'About'}
-                        </a>
-                        <a style={{ color: this.props.txtColor }}
+                        </Link>
+                        <Link style={{ color: this.props.txtColor }}
                             onClick={this.clicking.bind(this, `${mn3 ? mn3 : 'Service'}`)}
                             className={this.isActive(`${mn3 ? mn3 : 'Service'}`)}
-                            href={mnhref3 ? mnhref3 : "#service"}>
+                            to={mnhref3 ? mnhref3 : "/service"}>
                             {mn3 ? mn3 : 'Service'}
-                        </a>
+                        </Link>
                         <a href="#" onClick={this.toggleMenu} className="icon"><img src={`${isExpanded ? xmenu : bars}`} width="30" height="20" alt="menu" /></a>
                     </div>
                 </div>
@@ -64,30 +64,30 @@ export default class TopNavReponsive extends Component {
                 <div>
                     {this.props.brand ? <img className="menu-brand" src={brand} width="100" height="40" alt="logo-brand" /> : null}
                     <div style={{ background: this.props.bgColor }} className={`topnav  ${isExpanded ? 'is-expanded' : ''}`} >
-                        <a style={{ color: this.props.txtColor }}
+                        <Link style={{ color: this.props.txtColor }}
                             onClick={this.clicking.bind(this, `${mn1 ? mn1 : 'Home'}`)}
                             className={this.isActive(`${mn1 ? mn1 : 'Home'}`)}
-                            href={mnhref1 ? mnhref1 : '#home'}>
+                            to={mnhref1 ? mnhref1 : '/'}>
                             {mn1 ? mn1 : 'Home'}
-                        </a>
-                        <a style={{ color: this.props.txtColor }}
+                        </Link>
+                        <Link style={{ color: this.props.txtColor }}
                             onClick={this.clicking.bind(this, `${mn2 ? mn2 : 'About'}`)}
                             className={this.isActive(`${mn2 ? mn2 : 'About'}`)}
-                            href={mnhref2 ? mnhref2 : "#about"}>
+                            to={mnhref2 ? mnhref2 : "/about"}>
                             {mn2 ? mn2 : 'About'}
-                        </a>
-                        <a style={{ color: this.props.txtColor }}
+                        </Link>
+                        <Link style={{ color: this.props.txtColor }}
                             onClick={this.clicking.bind(this, `${mn3 ? mn3 : 'Service'}`)}
                             className={this.isActive(`${mn3 ? mn3 : 'Service'}`)}
-                            href={mnhref3 ? mnhref3 : "#service"}>
+                            to={mnhref3 ? mnhref3 : "/service"}>
                             {mn3 ? mn3 : 'Service'}
-                        </a>
-                        <a style={{ color: this.props.txtColor }}
+                        </Link>
+                        <Link style={{ color: this.props.txtColor }}
                             onClick={this.clicking.bind(this, `${mn4 ? mn4 : 'Contact'}`)}
                             className={this.isActive(`${mn4 ? mn4 : 'Contact'}`)}
-                            href={mnhref4 ? mnhref4 : "#contact"}>
+                            to={mnhref4 ? mnhref4 : "/contact"}>
                             {mn4 ? mn4 : 'Contact'}
-                        </a>
+                        </Link>
                         <a href="#" onClick={this.toggleMenu} className="icon"><img src={`${isExpanded ? xmenu : bars}`} width="30" height="20" alt="menu" /></a>
                     </div>
                 </div>
