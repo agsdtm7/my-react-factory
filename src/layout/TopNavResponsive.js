@@ -32,7 +32,7 @@ export default class TopNavReponsive extends Component {
             const { isExpanded } = this.state;
             const { mn1, mnhref1, mn2, mnhref2, mn3, mnhref3 } = this.props;
             return (
-                <div>
+                <div className="topnav-container">
                     {this.props.brand ? <img className="menu-brand" src={brand} width="100" height="40" alt="logo-brand" /> : null}
                     <div style={{ background: this.props.bgColor }} className={`topnav  ${isExpanded ? 'is-expanded' : ''}`} >
                         <Link style={{ color: this.props.txtColor }}
@@ -61,7 +61,7 @@ export default class TopNavReponsive extends Component {
             const { isExpanded } = this.state;
             const { mn1, mnhref1, mn2, mnhref2, mn3, mnhref3, mn4, mnhref4 } = this.props;
             return (
-                <div>
+                <div className="topnav-container">
                     {this.props.brand ? <img className="menu-brand" src={brand} width="100" height="40" alt="logo-brand" /> : null}
                     <div style={{ background: this.props.bgColor }} className={`topnav  ${isExpanded ? 'is-expanded' : ''}`} >
                         <Link style={{ color: this.props.txtColor }}

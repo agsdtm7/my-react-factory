@@ -51,11 +51,9 @@
     }
 
     .topnav.is-expanded{
-        
         display: flex;
         align-items: flex-end;
         flex-direction: column;
-       
     }
     .topnav.is-expanded a:first-child{
         padding-top:50px;
@@ -65,8 +63,8 @@
         margin-bottom:5px;
     } 
     .topnav.is-expanded a.default, .topnav.is-expanded a.active{
-        float:none !important;
-        display:block !important;
-        text-align:left !important;
+        float:none;
+        display:block;
+        text-align:left;
     }
 }
